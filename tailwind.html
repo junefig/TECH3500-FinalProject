@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECH 3500 – Tailwind CSS Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-neutral-100 text-neutral-900">
+
+  <!-- TOP BAR -->
+  <header class="bg-neutral-900 text-neutral-100">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+      <span class="font-medium tracking-wide">June Figueroa</span>
+      <nav class="space-x-4 text-sm">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">Life</a>
+        <a href="#" class="hover:underline">Hobbies</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- TITLE -->
+  <section class="max-w-4xl mx-auto text-center mt-10 px-6">
+    <h1 class="text-3xl font-semibold mb-3">
+      Tailwind CSS – Life Outside Kean
+    </h1>
+    <p class="text-neutral-600 text-sm">
+      This page was created for TECH 3500 to demonstrate Tailwind CSS utility classes
+      through a simple, customized layout inspired by my daily life outside school.
+    </p>
+  </section>
+
+  <!-- GRID -->
+  <section class="max-w-4xl mx-auto mt-10 px-6">
+    <h2 class="text-xl font-medium mb-4 text-center">Weekly Balance</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="bg-white rounded-lg shadow-sm p-5 border-l-4 border-blue-500">
+        <h3 class="font-medium mb-1">Time with Others</h3>
+        <p class="text-sm text-neutral-600">
+          Spending quality time with family and friends to stay grounded.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm p-5 border-l-4 border-green-500">
+        <h3 class="font-medium mb-1">Staying Active</h3>
+        <p class="text-sm text-neutral-600">
+          Playing sports and staying active helps reset and focus.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm p-5 border-l-4 border-amber-500">
+        <h3 class="font-medium mb-1">Relax & Recharge</h3>
+        <p class="text-sm text-neutral-600">
+          Music, shows, and quiet time provide balance during busy weeks.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDS -->
+  <section class="max-w-4xl mx-auto mt-10 px-6">
+    <h2 class="text-xl font-medium mb-4 text-center">Personal Interests</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-lg p-6 shadow border">
+        <h3 class="font-semibold mb-2">Sports</h3>
+        <p class="text-sm text-neutral-700">
+          Soccer and tennis help me stay disciplined and focused while still having fun.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow border">
+        <h3 class="font-semibold mb-2">Downtime</h3>
+        <p class="text-sm text-neutral-700">
+          Relaxing with music or shows helps reset between responsibilities.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="max-w-md mx-auto mt-12 px-6 mb-10">
+    <h2 class="text-xl font-medium mb-4 text-center">Quick Check-In</h2>
+
+    <form class="bg-white p-6 rounded-lg shadow space-y-4">
+      <div>
+        <label class="block text-sm mb-1">Name</label>
+        <input type="text"
+               class="w-full border rounded px-3 py-2 text-sm
+                      focus:outline-none focus:ring-1 focus:ring-neutral-800">
+      </div>
+
+      <div>
+        <label class="block text-sm mb-1">Favorite Way to Relax</label>
+        <input type="text"
+               class="w-full border rounded px-3 py-2 text-sm
+                      focus:outline-none focus:ring-1 focus:ring-neutral-800">
+      </div>
+
+      <button type="submit"
+              class="w-full bg-neutral-900 text-white py-2 rounded text-sm
+                     hover:bg-neutral-800">
+        Submit
+      </button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-neutral-900 text-neutral-400 text-xs text-center py-4">
+    TECH 3500 – Tailwind CSS Lab | Customized single-page layout | June Figueroa
+  </footer>
+
+</body>
+</html>

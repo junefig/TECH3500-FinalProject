@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TECH 3500 – Materialize CSS Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Materialize CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body class="grey lighten-4">
+
+  <!-- NAVBAR -->
+  <nav class="teal darken-3">
+    <div class="nav-wrapper container">
+      <a href="#!" class="brand-logo">June Figueroa</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#routine">Routine</a></li>
+        <li><a href="#checkin">Check-In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section id="overview" class="section center">
+    <div class="container">
+      <h3 class="teal-text text-darken-3">Materialize CSS – Daily Routine</h3>
+      <p class="grey-text text-darken-1">
+        This page was created for TECH 3500 using the Materialize CSS framework.
+        It demonstrates layout, cards, forms, and interactive components with a simple theme
+        based on a balanced daily routine.
+      </p>
+    </div>
+  </section>
+
+  <!-- GRID + CARDS -->
+  <section id="routine" class="section">
+    <div class="container">
+      <h5 class="center">Key Parts of My Day</h5>
+
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Morning</span>
+              <p>Planning the day, checking tasks, and getting organized before things get busy.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Afternoon</span>
+              <p>Working through classes, projects, and responsibilities with focused time.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Evening</span>
+              <p>Slowing down, spending time with others, and resetting for the next day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NOTIFICATION + BUTTONS -->
+  <section class="section">
+    <div class="container">
+      <div class="card-panel teal lighten-4">
+        <span class="teal-text text-darken-4">
+          A consistent routine helps keep work, school, and life a bit more balanced.
+        </span>
+      </div>
+
+      <div class="center">
+        <a class="btn teal darken-3 modal-trigger" href="#summaryModal">
+          View Quick Summary
+        </a>
+        <a class="btn-flat teal-text text-darken-3">
+          Simple Layout
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section id="checkin" class="section">
+    <div class="container">
+      <h5 class="center">Daily Check-In</h5>
+
+      <div class="row">
+        <form class="col s12 m8 offset-m2 white z-depth-1" style="padding: 20px;">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="name" type="text">
+              <label for="name">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="highlight" type="text">
+              <label for="highlight">Highlight of Today</label>
+            </div>
+          </div>
+
+          <div class="row center">
+            <button type="submit" class="btn teal darken-3">
+              Save Check-In
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="summaryModal" class="modal">
+    <div class="modal-content">
+      <h4>Routine Summary</h4>
+      <p>
+        This simple page uses Materialize CSS components to organize a daily routine into clear
+        sections, while also including a form and modal for interaction.

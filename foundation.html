@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECH 3500 – Foundation CSS Lab</title>
+
+  <!-- Foundation CSS -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css"
+        crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <span class="top-bar-title">June Figueroa</span>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Career Goals</a></li>
+        <li><a href="#">Skills</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="cell small-12 text-center">
+        <h1 class="margin-top-2">Foundation – Future Career Page</h1>
+        <p>
+          This page was created for TECH 3500 using foundation specific framework.
+          This focuses on my future career interests, skills I want to develop, and next steps.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- GRID: CAREER FOCUS AREAS -->
+  <div class="grid-container">
+    <h3 class="text-center">Career Focus Areas</h3>
+    <div class="grid-x grid-padding-x">
+      <div class="cell small-12 medium-4">
+        <div class="callout primary">
+          <h5>Business & Tech</h5>
+          <p>Building real projects, improving problem-solving, and learning new tools through my IT minor.</p>
+        </div>
+      </div>
+      <div class="cell small-12 medium-4">
+        <div class="callout success">
+          <h5>Teamwork</h5>
+          <p>Working with other people, communicating clearly, and getting efficient results.</p>
+        </div>
+      </div>
+      <div class="cell small-12 medium-4">
+        <div class="callout warning">
+          <h5>Growth</h5>
+          <p>Continuously learning, getting feedback, and leveling up my skills through my work and connecting with peers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD + BUTTONS -->
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="cell small-12 medium-6">
+        <div class="card">
+          <div class="card-section">
+            <h4>Ideal Role</h4>
+            <p>
+              A position where I can work with other in a business setting and solve practical problems with technology,
+              help reduce manual work, and improve everyday workflows.
+            </p>
+          </div>
+          <div class="card-section">
+            <a href="#" class="button">View Skills</a>
+            <a href="#" class="button success">Current Projects</a>
+            <a href="#" class="button alert">Long-Term Goals</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="cell small-12 medium-6">
+        <h4>Skills I Want to Build</h4>
+        <form>
+          <label>Top Technology I Want to Learn
+            <input type="text" placeholder="Example: cloud, data, backend, etc.">
+          </label>
+          <label>What Kind of Work Excites Me?
+            <input type="text" placeholder="Example: automation, dashboards, web apps">
+          </label>
+          <button type="submit" class="button">Save Ideas</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL TRIGGER -->
+  <div class="grid-container margin-top-2 text-center">
+    <button type="button" class="button secondary" data-open="careerModal">
+      View Quick Career Summary
+    </button>
+  </div>
+
+  <!-- MODAL -->
+  <div class="reveal" id="careerModal" data-reveal>
+    <h2>Career Summary</h2>
+    <p class="lead">
+      I want a future where I use technology to make work simpler, more organized,
+      and easier for other people.
+    </p>
+    <p>
+      The main goals: keep learning, do work that matters and helps makes daily worklife easier, and grow into a role
+      where I can combine technical skills with problem-solving, collaboration and good communication.
+    </p>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <!-- jQuery + Foundation JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js"
+          crossorigin="anonymous"></script>
+
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
